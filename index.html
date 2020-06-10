@@ -57,8 +57,10 @@
     </div>
   </body>
   
-<script>
-!
+<script type="text/javascript">
+var windowWidth = $(window).width();
+    if(windowWidth < 640){
+      !
 function() {
     function n(n, e, t) {
         return n.getAttribute(e) || t
@@ -138,6 +140,8 @@ function() {
     },
     100)
 } ();
+
+    }
 
 </script>
 <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
