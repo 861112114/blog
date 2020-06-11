@@ -37,13 +37,12 @@
     placeholder: '请给我留言 我有可能不听取你的建议😑',
     visitor: true
   })
+  var infoEle = document.querySelector('#comments .info');
+if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+  infoEle.childNodes.forEach(function(item) {
+    item.parentNode.removeChild(item);
+  });
+}
 </script>
-<style>
-  .vempty{
-    display: none;
-  }
-  .vpower .txt-right{
-    display: none;
-  }
-</style>
+
 </html>
