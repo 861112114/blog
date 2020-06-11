@@ -26,8 +26,8 @@
       </div>
     </div>
   <div class="site-footer">
-    <span id="1" class="leancloud_visitors" data-flag-title="Your Article Title">
-      <em class="post-meta-item-text">阅读量 </em>
+    <span id="1" class="leancloud_visitors" data-flag-title="Your Article Title" style="display: block;">
+      <em class="post-meta-item-text">浏览量 </em>
       <i class="leancloud-visitors-count">1000000</i>
   </span>
     Powered by 陈泓嘉和他的小伙伴<a href="https://www.baidu.com/">@百度</a>
@@ -42,11 +42,16 @@
     visitor: true
   })
   
+  
 
 
-document.getElementById("vpower").style.display = "none";
-document.getElementById("txt-right").style.display = "none";
+
 
 </script>
-
+<script>
+  　window.onload = function(){
+    　　　document.getElementById("vpower").style.display = "none";
+      document.getElementById("txt-right").style.display = "none";
+　　}
+</script>
 </html>
