@@ -6,10 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../../css/index.css">
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script>
+    new Valine({
+      el: '#vcomments',
+      appId: 'LFEHo2sFGi5Hy4WlqUyvhkzi-gzGzoHsz',
+      appKey: 'd6Ml6Cn32k9PcqBU0KOfTn7q',
+      placeholder: ' ',
+      visitor: true
+    })
+  </script>
   <title>留言板</title>
   <style>
-    .vpower .txt-right{
-      display: none;
+    .vpower {
+      display: hidden;
+    }
+    .txt-right{
+      display: hidden;
     }
   </style>
 </head>
@@ -29,13 +41,5 @@
     Powered by 陈泓嘉和他的小伙伴<a href="https://www.baidu.com/">@百度</a>
   </div>
 </body>
-<script>
-  new Valine({
-    el: '#vcomments',
-    appId: 'LFEHo2sFGi5Hy4WlqUyvhkzi-gzGzoHsz',
-    appKey: 'd6Ml6Cn32k9PcqBU0KOfTn7q',
-    placeholder: ' ',
-    visitor: true
-  })
-</script>
+
 </html>
