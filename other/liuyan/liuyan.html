@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../css/index.css">
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <title>留言板</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="main-content">
+      <div class="site-header">
+        <img class="avatar" src="http://img.mp.itc.cn/upload/20170724/cf678e09eb384401aa616ba134126357_th.jpg" alt="">
+        <a href="../../index.html">回到首页</a>
+        <div class="menu-container">
+          <div id="vcomments"></div>
+       </div>
+      </div>
+    </div>
+</body>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'LFEHo2sFGi5Hy4WlqUyvhkzi-gzGzoHsz',
+    appKey: 'd6Ml6Cn32k9PcqBU0KOfTn7q'
+  })
+</script>
+</html>
