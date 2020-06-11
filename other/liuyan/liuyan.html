@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="main">
+  <div class="main" id="1">
     <div class="main-content">
       <div class="site-header">
         <img class="avatar" src="http://img.mp.itc.cn/upload/20170724/cf678e09eb384401aa616ba134126357_th.jpg" alt="">
@@ -26,6 +26,10 @@
       </div>
     </div>
   <div class="site-footer">
+    <span id="1" class="leancloud_visitors" data-flag-title="Your Article Title">
+      <em class="post-meta-item-text">阅读量 </em>
+      <i class="leancloud-visitors-count">1000000</i>
+  </span>
     Powered by 陈泓嘉和他的小伙伴<a href="https://www.baidu.com/">@百度</a>
   </div>
 </body>
@@ -37,12 +41,12 @@
     placeholder: '请给我留言 我有可能不听取你的建议😑',
     visitor: true
   })
-  var infoEle = document.querySelector('#comments .info');
-if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
-  infoEle.childNodes.forEach(function(item) {
-    item.parentNode.removeChild(item);
-  });
-}
+  
+
+
+document.getElementById("vpower").style.display = "none";
+document.getElementById("txt-right").style.display = "none";
+
 </script>
 
 </html>
