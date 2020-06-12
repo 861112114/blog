@@ -26,6 +26,7 @@
     </div>
   <div class="site-footer">
     Powered by 陈泓嘉和他的小伙伴<a href="https://www.baidu.com/">@百度</a>
+    <div id="showDays"></div>
   </div>
 </body>
 <script>
@@ -62,4 +63,11 @@ function send_valine_Server(){
 };
 ValineButton.onclick=send_valine_Server;
 </script>
+<script>
+  var birthDay = new Date("06/06/2020");
+  var now = new Date();
+  var duration = now.getTime() - birthDay.getTime(); 
+  var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+  document.getElementById("showDays").innerHTML = "本站已平稳航行"+total+"天"; //这里就是总运行天数
+  </script>
 </html>
