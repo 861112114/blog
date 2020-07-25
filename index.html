@@ -6,11 +6,15 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="icon" href="img/me.ico" type="img/x-ico" /> 
   <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+ 
   <title>陈泓嘉的秘密基地</title>
 </head>
 
 <body>
-  <div class="main">
+  <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+  <div class="main" style=" background-color: rgba(225,225,225,0);">
     <div class="main-content">
       <div class="site-header">
         <a href="/">
@@ -48,12 +52,39 @@
         </div>
       </div>
     </div>
+  </div>
 </body>
-<script type="text/javascript">
-if (screen.width<>640)
-    document.write('<script type="text/javascript" src="js/xian.js"><\/script>');
+<script>
+  if(window.screen.width>802){
+    var new_element = document.createElement("script");
+new_element.setAttribute("type", "text/javascript");
+new_element.setAttribute(
+"src",
+"js/pc.js"
+);
+document.body.appendChild(new_element);
+
+
+}else {
+document.write("<link href='css/m.css' rel='stylesheet' type='text/css'>");
+}
+
 </script>
 <script>
+  document.oncontextmenu = function(){return false};   //禁止鼠标右键菜单显示
+   document.body.onmouseup = function(e){   //在body里点击触发事件
+    if(e.button===2){    //如果button=1（鼠标左键），button=2（鼠标右键），button=0（鼠标中间键）
+      alert("右键被敌人偷走了∑(°Д°;≡;°д°)");
+      return false;
+    }
+     
+   }
+   document.body.onkeydown = function(k){
+    if(k.keyCode==123){
+      alert("没有权限访问母星源代码(ー ー゛)");
+      return false;
+    }
+   }
   var birthDay = new Date("06/06/2020");
   var now = new Date();
   var duration = now.getTime() - birthDay.getTime(); 
